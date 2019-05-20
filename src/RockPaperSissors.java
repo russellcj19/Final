@@ -27,7 +27,7 @@ public class RockPaperSissors {
                     System.out.println("Rock and Rock is a Tie...");
                     tieTotal++;
                 } else if (random == 2) {
-                    System.out.println("Paper beats Rock, You LOST...");
+                    System.out. println("Paper beats Rock, You LOST...");
                     loseTotal = loseTotal + 1;
                 } else{
                     System.out.println("Rock beats Scissors, You win!");

@@ -16,6 +16,8 @@ public class Main {
             System.out.println("  999 to quit");
             userEntry = input.nextInt();
             if (userEntry == 1)
+               FlipACoin.FlipACoin();
+            else if (userEntry == 2)
                 RockPaperSissors.RockPaperSissors();
         }
     }

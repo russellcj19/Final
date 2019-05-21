@@ -54,9 +54,9 @@ public class MadLibs {
 
         System.out.println("Pizza was invented by a" + userEntry[0] + userEntry[1] +
         "chef named" + userEntry[2] +". To make a pizza, you need to take a lump of"
-        + userEntry4 + ", and make a thin, round" + userEntry5 + userEntry6 +
-        ". Then you cover it with" + userEntry7 + "sauce," + userEntry8 +
-        "cheese, and fresh chopped" + userEntry9 + );
+        + userEntry[3] + ", and make a thin, round" + userEntry[4] + userEntry[5] +
+        ". Then you cover it with" + userEntry[6] + "sauce," + userEntry[7] +
+        "cheese, and fresh chopped" + userEntry[8] );
     }
 
 }

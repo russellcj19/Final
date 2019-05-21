@@ -19,6 +19,8 @@ public class Main {
                FlipACoin.FlipACoin();
             else if (userEntry == 2)
                 RockPaperSissors.RockPaperSissors();
+            else if (userEntry == 6)
+                Hangman.HangMan();
         }
     }
 }

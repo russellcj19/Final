@@ -24,13 +24,39 @@ public class MadLibs {
         }
     }
     public static void funnyStory(){
-        int userEntry;
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please Enter Color");
-        userEntry = input.nextInt();
-        System.out.println("Please enter Adjective");
-        
+        String[] userEntry = new String[15];
+        String[] madLibsQs = {"Adjective","Nationality","Person","Noun","Adjective","Noun"};
 
+        Scanner input = new Scanner(System.in);
+        for(int i = 0; i<madLibsQs.length;i++){
+        System.out.println("Please Enter "+ madLibsQs[i]);
+        userEntry[i] = input.next();
+        }
+
+//        System.out.println("Please Enter Adjective");
+//        userEntry7 = input.nextInt();
+//        System.out.println("Please Enter Adjective");
+//        userEntry8 = input.nextInt();
+//        System.out.println("Please Enter Plural Noun");
+//        userEntry9 = input.nextInt();
+//        System.out.println("Please Enter Noun");
+//        userEntry10 = input.nextInt();
+//        System.out.println("Please Enter Number");
+//        userEntry11 = input.nextInt();
+//        System.out.println("Please Enter Shapes");
+//        userEntry12 = input.nextInt();
+//        System.out.println("Please Enter Food");
+//        userEntry13 = input.nextInt();
+//        System.out.println("Please Enter Food");
+//        userEntry14 = input.nextInt();
+//        System.out.println("Please Enter Number");
+//        userEntry15 = input.nextInt();
+
+        System.out.println("Pizza was invented by a" + userEntry[0] + userEntry[1] +
+        "chef named" + userEntry[2] +". To make a pizza, you need to take a lump of"
+        + userEntry4 + ", and make a thin, round" + userEntry5 + userEntry6 +
+        ". Then you cover it with" + userEntry7 + "sauce," + userEntry8 +
+        "cheese, and fresh chopped" + userEntry9 + );
     }
 
 }

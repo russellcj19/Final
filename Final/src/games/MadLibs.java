@@ -18,15 +18,16 @@ public class MadLibs {
 
             if (choice == 1)
                 funnyStory();
-//            else if (choice == 2)
-//                //sadStory();
+            else if (choice == 2)
+                hallPass();
 //            else if (choice == 3)
 //                //fictionStory();
         }
     }
     public static void funnyStory(){
         String[] userEntry = new String[15];
-        String[] madLibsQs = {"Adjective","Nationality","Person","Noun","Adjective","Noun"};
+        String[] madLibsQs = {"Adjective","Nationality","Person","Noun","Adjective","Noun","Adjective","Adjective", 
+        		"Plural noun", "Noun", "number", "Shapes", "Food", "Food", "Number"};
 
         Scanner input = new Scanner(System.in);
         for(int i = 0; i<madLibsQs.length;i++){
@@ -34,30 +35,27 @@ public class MadLibs {
         userEntry[i] = input.next();
         }
 
-//        System.out.println("Please Enter Adjective");
-//        userEntry7 = input.nextInt();
-//        System.out.println("Please Enter Adjective");
-//        userEntry8 = input.nextInt();
-//        System.out.println("Please Enter Plural Noun");
-//        userEntry9 = input.nextInt();
-//        System.out.println("Please Enter Noun");
-//        userEntry10 = input.nextInt();
-//        System.out.println("Please Enter Number");
-//        userEntry11 = input.nextInt();
-//        System.out.println("Please Enter Shapes");
-//        userEntry12 = input.nextInt();
-//        System.out.println("Please Enter Food");
-//        userEntry13 = input.nextInt();
-//        System.out.println("Please Enter Food");
-//        userEntry14 = input.nextInt();
-//        System.out.println("Please Enter Number");
-//        userEntry15 = input.nextInt();
-
-        System.out.println("Pizza was invented by a" + userEntry[0] + userEntry[1] +
-        "chef named" + userEntry[2] +". To make a pizza, you need to take a lump of"
+        System.out.println("Pizza was invented by an " + userEntry[0]  +  userEntry[1] +
+        " chef named " + userEntry[2] +". To make a pizza, you need to take a lump of\n"
         + userEntry[3] + ", and make a thin, round" + userEntry[4] + userEntry[5] +
         ". Then you cover it with" + userEntry[6] + "sauce," + userEntry[7] +
-        "cheese, and fresh chopped" + userEntry[8] );
+        "cheese, and fresh chopped" + userEntry[8] + ". Next you have to bake it in a very hot\n" + userEntry[9] +
+        ". When it is done, cut it into" + userEntry[10] + userEntry[11] + ". Some kids like" + userEntry[12] + 
+        "Pizza the best, but my favorite is the" + userEntry[13] + "pizza. if I could, I would eat pizza\n" + userEntry[14] + "times a day!" );
     }
+    public static void hallPass();
+    String[] userEntry = new String[3];
+    String[] madLibsQs = {"Enter date", "Enter name", "Enter noun", "Enter an event"};
+    Scanner input = new Scanner(System.in);
+    for(int i = 0; i<madLibsQs.length;i++){
+    System.out.println("Please Enter "+ madLibsQs[i]);
+    userEntry[i] = input.next();
+    }
+    System.out.println("HALL PASS\n" + "DATE" + userEntry[0] + "\n" + userEntry[1] + "is too cool for " 
+    		+ userEntry[2] + "class. Instead she/he will be attending the" + userEntry[3] + "SIGNED...");
+    
+    
+   
+    
 
 }

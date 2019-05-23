@@ -1,3 +1,4 @@
+package games;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -17,10 +18,10 @@ public class MadLibs {
 
             if (choice == 1)
                 funnyStory();
-            else if (choice == 2)
-                sadStory();
-            else if (choice == 3)
-                fictionStory();
+//            else if (choice == 2)
+//                //sadStory();
+//            else if (choice == 3)
+//                //fictionStory();
         }
     }
     public static void funnyStory(){

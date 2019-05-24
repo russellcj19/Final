@@ -7,7 +7,7 @@ public class Main {
         int userEntry=0;
         Scanner input = new Scanner(System.in);
         while(userEntry !=999) {
-            System.out.println("Hello and welcome to the RUSSELL TWINS GAME CENTER");
+            System.out.println("\nHello and welcome to the RUSSELL TWINS GAME CENTER");
             System.out.println("1: Flip a Coin");
             System.out.println("2: Rock Paper and Scissors ");
             System.out.println("3: Simon Says");
@@ -21,7 +21,7 @@ public class Main {
             else if (userEntry == 2)
                 RockPaperSissors.RockPaperSissors();
             else if (userEntry == 6)
-                Hangman.HangMan();
+                Hangman.displayHangman();
         }
     }
 }
